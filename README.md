@@ -1,1 +1,3 @@
-# 04_patterns_observer
+# 04_patterns_observer_class
+
+## Variante mit abstrakter Klasse
