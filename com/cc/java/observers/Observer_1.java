@@ -12,13 +12,21 @@ public class Observer_1 extends Observer{
         this.s = s;
         this.name = name;
         s.attach(this);
+    }
+
+    // /* Variante Push()*/
+    @Override
+    public void update(String state) {
+        String str = name + ": observes, that subject changed its state to: " + state;
+        Logger.ausgabe(str);
     } 
 
-    @Override
-    public void update() {
-        String str = name + ": observes, that subject changed its state to " + s.getState();
-        Logger.ausgabe(str);
-    }
+    // /* Variante Pull()*/
+    // @Override
+    // public void update() {
+    //     String str = name + ": observes, that subject changed its state to: " + s.getState();
+    //     Logger.ausgabe(str);
+    // }
 
 
 

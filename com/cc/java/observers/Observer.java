@@ -2,6 +2,9 @@ package com.cc.java.observers;
 
 public abstract class Observer {
 
-    public abstract void update();
+    // Variante Pull()
+   // public abstract void update();
 
+   // Variante Push()
+   public abstract void update(String boo);
 }
