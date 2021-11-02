@@ -14,12 +14,16 @@ public class App {
 
       s.setState("state 1");
       Logger.ausgabe("-------------");
+      o2.setNotifiedByPush(true);
       s.setState("state 2");
       Logger.ausgabe("------------");
       s.setState("state 3");
       Logger.ausgabe("------------");
       s.detatch(o1);
       s.setState("state 2");
+      s.attach(o1);
+      s.setState("Mal was ganz Anderes");
+      
 
     }
 

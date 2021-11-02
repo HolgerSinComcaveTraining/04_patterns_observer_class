@@ -27,7 +27,13 @@ public class Subject implements Observable{
     @Override
     public void notifyObservers() {
         for (Observer o : observers) {
-            o.update();
+            if (o.isNotifiedByPush()) {
+                o.update("my state is: " + state);
+            } else {
+                o.update();
+            }
+            
+            
         }  
     }
 

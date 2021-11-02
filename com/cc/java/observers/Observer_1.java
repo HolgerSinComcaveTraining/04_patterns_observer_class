@@ -20,6 +20,12 @@ public class Observer_1 extends Observer{
         Logger.ausgabe(str);
     }
 
+    @Override
+    public void update(String pushText) {
+        String str = name + ": has been given the following information from the subject: " + pushText;
+        Logger.ausgabe(str);
+    }
+
 
 
 
