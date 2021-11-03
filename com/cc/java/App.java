@@ -21,6 +21,7 @@ public class App {
       Logger.ausgabe("------------");
       s.detatch(o1);
       s.setState("state 2");
+      Logger.ausgabe("------------");
       s.attach(o1);
       s.setState("Mal was ganz Anderes");
       
